@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coin flip</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://use.fontawesome.com/e7268c8cf2.js"></script>
+</head>
+
+<body>
+	<div class="coinDiv" id="coinDiv" onclick="coinFlip()">
+		<h1 id="coin">Press anywhere to flip the coin</h1>
+		<!-- <div id="side-1" class="flip">
+			<p>Heads</p>
+		</div>
+		<div id="side-2" class="flip">
+			<p>Tails</p>
+		</div> -->
+	</div>
+
+	<div id="chartDiv">
+		<div id="flipX">
+			<input type="number" id="times"><br>
+			<button type="button" name="button" onclick="flipXtimes()">Flip coin n times</button>
+		</div>
+		<p>Flipped <span id="flips">0</span> times</p>
+		<p>Heads: <span id="headsPercent">NaN</span>%</p>
+		<p>Tails: <span id="tailsPercent">NaN</span>%</p>
+  	<canvas id="chart" width="200vm" height="300vm"></canvas>
+		<canvas id="pieChart" width="200vm" height="200vm"></canvas>
+	</div>
+
+	<div class="stats" onclick="toggleStats()">
+		<i class="fa fa-bar-chart" aria-hidden="true"></i>
+	</div>
+
+</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</html>
